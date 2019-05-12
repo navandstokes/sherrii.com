@@ -1,0 +1,12 @@
+{
+	"version": 2,
+	"name": "vds",
+	"builds": [
+		{ "src": "package.json", "use": "@now/next" }
+	],
+	"routes": [
+		{ "src": "/page/(?<slug>[^/]+)$", "dest": "/page?slug=$slug" },
+		{ "src": "/main/(?<slug>[^/]+)$", "dest": "/page?slug=$slug" },
+		{ "src": "/(.*)", "dest": "/$1" }
+	]
+}

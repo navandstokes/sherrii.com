@@ -1,0 +1,25 @@
+{
+  "name": "sherrii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "now-build": "next build"
+  },
+  "keywords": [],
+  "author": "Sherri Cui <sherrii@pm.me>",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "contentful": "^7.5.1",
+    "next": "^8.1.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-icons": "^3.4.0",
+    "react-spring": "^7.2.11",
+    "react-waypoint": "^8.1.0"
+  }
+}

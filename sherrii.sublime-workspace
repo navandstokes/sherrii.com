@@ -1,0 +1,1609 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"react",
+				"react-icons"
+			],
+			[
+				"aspe",
+				"aspect-ratio--1x1"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"max-",
+				"max-width\tproperty"
+			],
+			[
+				"fonts",
+				"font-size\tproperty"
+			],
+			[
+				"object",
+				"object-fit\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"paddi",
+				"padding-top\tproperty"
+			],
+			[
+				"backgrou",
+				"background-repeat\tproperty"
+			],
+			[
+				"texta",
+				"text-align\tproperty"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"subeme",
+				"submenuArray〔variable〕"
+			],
+			[
+				"scale",
+				"scaleX()\ttransform"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"animat",
+				"animated.div"
+			],
+			[
+				"Reat",
+				"ReactDOM"
+			],
+			[
+				"pria",
+				"privacy-policy"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"visib",
+				"visible"
+			],
+			[
+				"FooterC",
+				"FooterCopyright"
+			],
+			[
+				"Nav",
+				"Navmenu"
+			],
+			[
+				"c",
+				"className"
+			],
+			[
+				"obj",
+				"object-position\tproperty"
+			],
+			[
+				"space",
+				"space-between"
+			],
+			[
+				"sup",
+				"sup\tTag"
+			],
+			[
+				"gallery",
+				"galleryHelp"
+			],
+			[
+				"which",
+				"which_alice〔variable〕"
+			],
+			[
+				"main",
+				"mainitem"
+			],
+			[
+				"temp",
+				"temp_f"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"j",
+				"jcarousel"
+			],
+			[
+				"top",
+				"text-top"
+			],
+			[
+				"has",
+				"has-child"
+			],
+			[
+				"free",
+				"freelance"
+			],
+			[
+				"your",
+				"your-own"
+			],
+			[
+				"nav",
+				"nav-main"
+			],
+			[
+				"web",
+				"web-dev"
+			],
+			[
+				"4",
+				"4-hour-workweek"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"col",
+				"col-md-4"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 182.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"quick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"chnage br",
+				"Git: Change Branch"
+			],
+			[
+				"change branc",
+				"Git: Change Branch"
+			],
+			[
+				"git change",
+				"Git: Change Branch"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"change b",
+				"Git: Change Branch"
+			],
+			[
+				"git branc",
+				"Git: Change Branch"
+			],
+			[
+				"git new",
+				"Git: New Branch"
+			],
+			[
+				"quic",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"quick ",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"diff",
+				"Git: Diff Current File (Ignore Whitespace)"
+			],
+			[
+				"\tuick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"syntahtml",
+				"Set Syntax: HTML"
+			],
+			[
+				"sybab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"quicck",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"syntabab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"quck",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"current file",
+				"Git: Log Current File"
+			],
+			[
+				"current",
+				"Git: Add Current File"
+			],
+			[
+				"rese",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"qic",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"branch",
+				"Git: Change Branch"
+			],
+			[
+				"change br",
+				"Git: Change Branch"
+			],
+			[
+				"delete bran",
+				"Git: Delete Branch"
+			],
+			[
+				"merge branc",
+				"Git: Merge Branch"
+			],
+			[
+				"change bra",
+				"Git: Change Branch"
+			],
+			[
+				"git log",
+				"Git: Log All"
+			],
+			[
+				"delte bra",
+				"Git: Delete Branch"
+			],
+			[
+				"gitgutter compare",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"compare",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"log",
+				"Git: Log All"
+			],
+			[
+				"differ",
+				"Git: Diff All Files (Ignore Whitespace)"
+			],
+			[
+				"history",
+				"Git: Commit history"
+			],
+			[
+				"change",
+				"Git: Change Branch"
+			],
+			[
+				"gi differ",
+				"Git: Diff Current File"
+			],
+			[
+				"new branch",
+				"Git: New Branch"
+			],
+			[
+				"newb",
+				"Git: New Branch"
+			],
+			[
+				"branc",
+				"Git: Change Branch"
+			],
+			[
+				"git hist",
+				"Git: Commit history"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"git ",
+				"Git: Gui"
+			],
+			[
+				"git diff",
+				"Git: Diff All Files"
+			],
+			[
+				"commi",
+				"Git: Commit history"
+			],
+			[
+				"reset hard",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"githi",
+				"Git: Stash List"
+			],
+			[
+				"reset",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"set syn bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"toggle menu",
+				"View: Toggle Menu"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"set sny babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"quikc",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"adda",
+				"Git: Add All"
+			],
+			[
+				"addal",
+				"Git: Add All"
+			],
+			[
+				"syntaxbab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"set syntax bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"set syntax ecm",
+				"Set Syntax: Ecmascript"
+			],
+			[
+				"set syntax js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"set emac",
+				"Set Syntax: Ecmascript"
+			],
+			[
+				"set syntax e",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"add al",
+				"Git: Add All"
+			],
+			[
+				"git quick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"syntax bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"reset ",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"git re",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"unsta",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git addal",
+				"Git: Add All"
+			],
+			[
+				"gitadd",
+				"Git: Add All"
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"save ",
+				"Project: Save As"
+			],
+			[
+				"close proj",
+				"Project: Close"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"list pac",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"react ",
+				"Snippet: React: this.state"
+			],
+			[
+				"react",
+				"Snippet: React: class component"
+			],
+			[
+				"syntax babe",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"git conf",
+				"Set Syntax: Git Config"
+			],
+			[
+				"quk",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"packa rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"gulp",
+				"Gulp"
+			],
+			[
+				"git quic",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"git show",
+				"Git: Show Commit By Hash"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add al",
+				"Git: Add All"
+			],
+			[
+				"class",
+				"Snippet: React: class component"
+			],
+			[
+				"color sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"them co",
+				"Material Theme: Configuration"
+			],
+			[
+				"material",
+				"Material Theme: Configuration"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"browse",
+				"Preferences: Browse Packages"
+			],
+			[
+				"uisl",
+				"UI: Select Color Scheme"
+			],
+			[
+				"togg mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"sublimelinter set",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"color scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme material",
+				"Material Theme: Configuration"
+			],
+			[
+				"color ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"select the",
+				"UI: Select Theme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"select colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"add all",
+				"Git: Add All"
+			],
+			[
+				"gulp ",
+				"Gulp"
+			],
+			[
+				"gulp de",
+				"Gulp: Delete cache"
+			],
+			[
+				"package li",
+				"Package Control: List Packages"
+			],
+			[
+				"npm inst",
+				"npm: Install Package"
+			],
+			[
+				"npm uni",
+				"npm: Remove/Uninstall Package"
+			],
+			[
+				"git add all",
+				"Git: Add All"
+			],
+			[
+				"gulp task",
+				"Gulp: Run arbitrary task"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"A File Icon: Revert to a Freshly Installed State"
+			],
+			[
+				"git add curr",
+				"Git: Add Current File"
+			],
+			[
+				"git ad f",
+				"Git: Add Current File"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 252.0,
+		"history":
+		[
+			"npm install -g jshint",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/React/sherrii"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/React/vogue-next/static/generic.scss",
+		"/C/xampp/htdocs/React/vogue-next/components/Section.js",
+		"/C/xampp/htdocs/React/vogue-next/pages/page.js",
+		"/C/xampp/htdocs/React/vogue-next/.todo",
+		"/C/xampp/htdocs/React/vogue-next/pages/_app.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Menu.js",
+		"/C/xampp/htdocs/React/vogue-next/static/empty.scss",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/apsuedo.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Sidebar.js",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/logo.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Navbar.js",
+		"/C/xampp/htdocs/React/vogue-next/pages/gallery.js",
+		"/C/xampp/htdocs/React/vogue-next/api.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Filter.js",
+		"/C/xampp/htdocs/React/vogue-next/package.json",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/query.js",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/wp_taxonomies.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Loader.js",
+		"/C/xampp/htdocs/React/vogue-next-test/package.json",
+		"/C/xampp/htdocs/React/vogue-next-test/next.config.js",
+		"/C/xampp/htdocs/React/headless-wp/src/App.js",
+		"/C/xampp/htdocs/React/vogue-next/pages/faq.js",
+		"/C/xampp/htdocs/React/headless-wp/src/App.test.js",
+		"/C/xampp/htdocs/React/vogue-react/src/App.js",
+		"/C/xampp/htdocs/React/vogue-react/src/index.js",
+		"/C/xampp/htdocs/React/vogue-react/src/layouts/Home/Home.js",
+		"/C/xampp/htdocs/React/vogue-react/src/layouts/Page/Page.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Grid.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Gallery.js",
+		"/C/xampp/htdocs/React/vogue-next/now.json",
+		"/C/xampp/htdocs/React/vogue-next/next.config.js",
+		"/C/xampp/htdocs/React/vogue-next-test/now.json",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/icon.js",
+		"/C/xampp/htdocs/React/next-examples/with-next-sass/package.json",
+		"/C/xampp/htdocs/React/next-examples/basic-css/package.json",
+		"/C/xampp/htdocs/React/vogue-next/pages/index.js",
+		"/C/xampp/htdocs/React/vogue-next/.next/serverless/pages/main.js",
+		"/C/xampp/htdocs/React/now-examples-master/nextjs-static/package.json",
+		"/C/xampp/htdocs/React/now-examples-master/create-react-app/package.json",
+		"/C/Users/sherrii/AppData/Roaming/npm-cache/_logs/2019-04-22T05_12_38_030Z-debug.log",
+		"/C/xampp/htdocs/React/vogue-next/.next/serverless/pages/index.js",
+		"/C/xampp/htdocs/React/now-examples-master/nextjs-news/now.json",
+		"/C/xampp/htdocs/React/now-examples-master/nextjs-news/next.config.js",
+		"/C/xampp/htdocs/React/now-examples-master/nextjs-news/package.json",
+		"/C/xampp/htdocs/React/vogue-next/pages/main.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Panel.js",
+		"/C/xampp/htdocs/React/vogue-next/server.js",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/button.js",
+		"/C/xampp/htdocs/React/vogue-next/pages/blog.js",
+		"/C/xampp/htdocs/React/vogue-next/.nowignore",
+		"/C/xampp/htdocs/React/vogue-next/pages/post.js",
+		"/C/Program Files/nodejs/node_modules/npm/.npmrc",
+		"/C/Users/sherrii/AppData/Roaming/nvm/v11.12.0/node_modules/npm/.npmrc",
+		"/C/xampp/htdocs/React/vogue-next/static/generic.css",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_functions.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_base.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_media-query.scss",
+		"/C/xampp/htdocs/React/vogue-next/index.css",
+		"/C/xampp/htdocs/React/vogue-next/components/Footer.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Sidebar",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/theme.js",
+		"/C/xampp/htdocs/React/vogue-next/components/FooterCopyright.js",
+		"/C/xampp/htdocs/React/vogue-next/components/SVG/SVGlogo.js",
+		"/C/xampp/htdocs/React/vogue-next/components/SVG/InvisalignSVG.js",
+		"/C/xampp/htdocs/React/vogue-next/components/SocialIcons.js",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/logo",
+		"/C/xampp/htdocs/React/vogue-next/.babelrc",
+		"/C/xampp/htdocs/WP/index.php",
+		"/C/Users/sherrii/Desktop/sitemap.xml.php",
+		"/C/Users/sherrii/Desktop/index.php",
+		"/C/xampp/htdocs/React/vogue-next/pages/services.js",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/link-animation.js",
+		"/C/xampp/htdocs/Tutorials/sakura-master/css/normalize.css",
+		"/C/xampp/htdocs/React/vogue-next/components/MenuItem.js",
+		"/C/xampp/htdocs/React/vogue-next/components/MenuSub",
+		"/C/xampp/htdocs/React/vogue-next/components/Panel.ks",
+		"/C/xampp/htdocs/React/vogue-next/pages/_error.js",
+		"/C/xampp/htdocs/React/vogue-next/components/Layout.js",
+		"/C/xampp/htdocs/React/vogue-next/components/MenuData.js",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/node-libs-browser/mock/dns.js",
+		"/C/xampp/htdocs/React/vogue-next/components/FooterContact.js",
+		"/C/xampp/htdocs/React/vogue-next/components/lib/media-queries.js",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/src/_hovers.css",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/src/_styles.css",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/src/_skins.css",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/src/_border-colors.css",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/src/_colors.css",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/src/_media-queries.css",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/readme.md",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons/src/tachyons.css",
+		"/C/xampp/htdocs/React/vogue-next/node_modules/tachyons-cli/readme.md",
+		"/C/xampp/htdocs/React/vogue-next/static/tachy.css",
+		"/C/Users/sherrii/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/C/Users/sherrii/AppData/Roaming/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/C/xampp/htdocs/React/vogue-next/index.scss",
+		"/C/xampp/htdocs/React/vogue-next/components/ui.js",
+		"/C/xampp/htdocs/React/vogue-next/components/withLayout.js",
+		"/C/xampp/htdocs/React/vogue-next/pages/blogpost.js",
+		"/C/xampp/htdocs/React/vogue-next/.gitignore",
+		"/C/Users/sherrii/Custo/AHK/vogue_start.ahk",
+		"/C/Users/sherrii/AppData/Roaming/Mozilla/Firefox/Profiles/sc5yjjsy.default-1546072551716/chrome/userChrome.css",
+		"/C/Users/sherrii/AppData/Roaming/Mozilla/Firefox/Profiles/ofqx3cr7.default-1546060984134/chrome/userChrome.css",
+		"/C/Users/sherrii/AppData/Roaming/Mozilla/Firefox/Profiles/ofqx3cr7.default-1546060984134/chrome/userContent.css",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Menu/Menu.js",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_typography.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_spacing.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Footer/_footer.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Footer/FooterContact.js",
+		"/C/xampp/htdocs/React/vogue-react/src/components/SVG/SVGLogo.js",
+		"/C/xampp/htdocs/React/vogue-react/src/components/SVG/_SVGLogo.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Navbar/Navbar.js",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Menu/MenuItem.js",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_transitions.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Menu/_menu.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_a-hover.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Icons/_socialIcons.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_colors.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Navbar/_navbar.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Invisalign/InvisalignSVG.js",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Invisalign/_InvisalignSVG.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/index.scss",
+		"/C/xampp/htdocs/React/vogue-react/src/assets/img/Vogue_grey.svg",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Footer/FooterCopyright.js",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Footer/Footer.js",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Icons/SocialIcons.js",
+		"/C/xampp/htdocs/React/vogue-react/src/lib/scss/_icons.scss",
+		"/C/xampp/htdocs/React/vogue-react/.todo",
+		"/C/xampp/htdocs/React/vogue-react/src/components/Socials/SocialIcons.js"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tag",
+			"newTag",
+			" tag",
+			"url",
+			"this.state.cat",
+			"oldTags",
+			"this.state.tags",
+			"this.state.categories",
+			"baseUrl",
+			"handleClick",
+			"get",
+			"activeMain",
+			"panel",
+			"submenu",
+			"PAnel",
+			"panelsub",
+			"panelsubm",
+			"reload",
+			"itemSlug",
+			"key",
+			"dev",
+			"props",
+			"accordion",
+			"dev",
+			"props",
+			"navbarmenu",
+			"cover",
+			"magnolia",
+			"top center",
+			"min-height",
+			"body",
+			"serif",
+			"google",
+			"lato",
+			"bg-white",
+			"bg-",
+			"serif",
+			"font-family",
+			"gutter",
+			"gutt",
+			"submenu",
+			"sub",
+			"gutter",
+			"body",
+			")\n",
+			"colors",
+			"className=\"st2\"",
+			"className=\"st0\"",
+			"css",
+			"accordio",
+			"panel",
+			"SubMenu(",
+			"SubMenu",
+			"persist",
+			"menuArray[i]",
+			"SubMenu",
+			"persist",
+			"ul",
+			"persist",
+			"$social-size",
+			"h3",
+			"h4",
+			"h1",
+			"h3",
+			"-",
+			": r",
+			",",
+			"),",
+			",",
+			", ",
+			"#",
+			"--",
+			";",
+			"subactive",
+			"20em",
+			"post",
+			"url"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"newTag",
+			"tagArr",
+			" id",
+			"oldTag",
+			"oldTags",
+			"this.state.category",
+			"slug",
+			"slug\n",
+			"{\n",
+			"menu",
+			"\t\t\t\t\t\t",
+			"fill=\"#af006e\"",
+			"fill={props.color}",
+			"props",
+			"AccordionMenu",
+			"2rem",
+			"p",
+			"h3",
+			"h4",
+			"h1",
+			"_",
+			": \"r",
+			"\",",
+			")\",",
+			"\", ",
+			"\"#",
+			"",
+			",",
+			"submenu",
+			"page"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 74.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.SublimeLinter":
+	{
+		"height": 144.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 144.0
+	},
+	"output.gulp_output":
+	{
+		"height": 144.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.textarea":
+	{
+		"height": 156.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 144.0
+	},
+	"pinned_build_system": "",
+	"project": "sherrii.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"_app",
+				"pages\\_app.js"
+			],
+			[
+				"menu",
+				"components\\Menu.js"
+			],
+			[
+				"generi",
+				"static\\generic.scss"
+			],
+			[
+				"scss",
+				"static\\empty.scss"
+			],
+			[
+				"apsu",
+				"components\\lib\\apsuedo.js"
+			],
+			[
+				"sidebar",
+				"components\\Sidebar.js"
+			],
+			[
+				"logo",
+				"components\\lib\\logo.js"
+			],
+			[
+				"nav",
+				"components\\Navbar.js"
+			],
+			[
+				"app",
+				"pages\\_app.js"
+			],
+			[
+				"page",
+				"pages\\page.js"
+			],
+			[
+				"api",
+				"api.js"
+			],
+			[
+				"gallery",
+				"pages\\gallery.js"
+			],
+			[
+				"filter",
+				"components\\Filter.js"
+			],
+			[
+				"galler",
+				"components\\Gallery.js"
+			],
+			[
+				"faq",
+				"pages\\faq.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"todo",
+				".todo"
+			],
+			[
+				"navbar",
+				"components\\Navbar.js"
+			],
+			[
+				"apsue",
+				"components\\lib\\apsuedo.js"
+			],
+			[
+				".to",
+				".todo"
+			],
+			[
+				"now",
+				"now.json"
+			],
+			[
+				"next",
+				"next.config.js"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"now.js",
+				"now.json"
+			],
+			[
+				"main",
+				"pages\\main.js"
+			],
+			[
+				"panel",
+				"components\\Panel.js"
+			],
+			[
+				"server",
+				"server.js"
+			],
+			[
+				"icon",
+				"components\\lib\\icon.js"
+			],
+			[
+				"button",
+				"components\\lib\\button.js"
+			],
+			[
+				"navb",
+				"components\\Navbar.js"
+			],
+			[
+				"css",
+				"static\\generic.scss"
+			],
+			[
+				"menu.js",
+				"components\\Menu.js"
+			],
+			[
+				"serrv",
+				"server.js"
+			],
+			[
+				".too",
+				".todo"
+			],
+			[
+				"serv",
+				"server.js"
+			],
+			[
+				"t",
+				".todo"
+			],
+			[
+				"gener",
+				"static\\generic.scss"
+			],
+			[
+				"post",
+				"pages\\post.js"
+			],
+			[
+				"_pa",
+				"pages\\_app.js"
+			],
+			[
+				"_ap",
+				"pages\\_app.js"
+			],
+			[
+				".oto",
+				".todo"
+			],
+			[
+				"_App",
+				"pages\\_app.js"
+			],
+			[
+				"generic",
+				"static\\generic.scss"
+			],
+			[
+				".todo",
+				".todo"
+			],
+			[
+				"index.css",
+				"index.css"
+			],
+			[
+				"index",
+				"pages\\index.js"
+			],
+			[
+				"ind",
+				"index.css"
+			],
+			[
+				"footer",
+				"components\\Footer.js"
+			],
+			[
+				"link",
+				"components\\lib\\link-animation.js"
+			],
+			[
+				"linka",
+				"components\\lib\\link-animation.js"
+			],
+			[
+				"men",
+				"components\\Menu.js"
+			],
+			[
+				"oanel",
+				"components\\Panel.js"
+			],
+			[
+				"menuit",
+				"components\\MenuItem.js"
+			],
+			[
+				"link anim",
+				"components\\lib\\link-animation.js"
+			],
+			[
+				"packag",
+				"package.json"
+			],
+			[
+				"menuitem",
+				"components\\MenuItem.js"
+			],
+			[
+				"layout",
+				"components\\Layout.js"
+			],
+			[
+				"",
+				"components\\MenuItem.js"
+			],
+			[
+				"meni",
+				"components\\MenuItem.js"
+			],
+			[
+				"menuitm",
+				"components\\MenuItem.js"
+			],
+			[
+				"footer co",
+				"components\\FooterCopyright.js"
+			],
+			[
+				"social",
+				"components\\SocialIcons.js"
+			],
+			[
+				"sg",
+				"components\\SVG\\SVGlogo.js"
+			],
+			[
+				"svg",
+				"components\\SVG\\SVGlogo.js"
+			],
+			[
+				"svglog",
+				"components\\SVG\\SVGlogo.js"
+			],
+			[
+				"footercon",
+				"components\\FooterContact.js"
+			],
+			[
+				"invis",
+				"components\\SVG\\InvisalignSVG.js"
+			],
+			[
+				"copy",
+				"components\\FooterCopyright.js"
+			],
+			[
+				"med",
+				"components\\lib\\media-queries.js"
+			],
+			[
+				"svglo",
+				"components\\SVG\\SVGlogo.js"
+			],
+			[
+				"svgo",
+				"components\\SVG\\SVGlogo.js"
+			],
+			[
+				"footercont",
+				"components\\FooterContact.js"
+			],
+			[
+				"foot",
+				"components\\Footer.js"
+			],
+			[
+				"footer cop",
+				"components\\FooterCopyright.js"
+			],
+			[
+				"ser",
+				"server.js"
+			],
+			[
+				"copyr",
+				"components\\FooterCopyright.js"
+			],
+			[
+				"foter",
+				"components\\Footer.js"
+			],
+			[
+				"nex",
+				"next.config.js"
+			],
+			[
+				"pag",
+				"src\\layouts\\Page\\Page.js"
+			],
+			[
+				"svglogosc",
+				"src\\components\\SVG\\_SVGLogo.scss"
+			],
+			[
+				"svglogsc",
+				"src\\components\\SVG\\_SVGLogo.scss"
+			],
+			[
+				"svgl",
+				"src\\components\\SVG\\SVGLogo.js"
+			],
+			[
+				"typ",
+				"src\\lib\\scss\\_typography.scss"
+			],
+			[
+				"spac",
+				"src\\lib\\scss\\_spacing.scss"
+			],
+			[
+				"foosc",
+				"src\\components\\Footer\\_footer.scss"
+			],
+			[
+				"menui",
+				"src\\components\\Menu\\MenuItem.js"
+			],
+			[
+				"trans",
+				"src\\lib\\scss\\_transitions.scss"
+			],
+			[
+				"bas",
+				"src\\lib\\scss\\_base.scss"
+			],
+			[
+				"a-hov",
+				"src\\lib\\scss\\_a-hover.scss"
+			],
+			[
+				"color",
+				"src\\lib\\scss\\_colors.scss"
+			],
+			[
+				"footer con",
+				"src\\components\\Footer\\FooterContact.js"
+			],
+			[
+				"tran",
+				"src\\lib\\scss\\_transitions.scss"
+			],
+			[
+				"inv",
+				"src\\components\\Invisalign\\InvisalignSVG.js"
+			],
+			[
+				"func",
+				"src\\lib\\scss\\_functions.scss"
+			],
+			[
+				"socia",
+				"src\\components\\Icons\\SocialIcons.js"
+			],
+			[
+				"_soci",
+				"src\\components\\Icons\\_socialIcons.scss"
+			],
+			[
+				"lib_icon",
+				"src\\lib\\scss\\_icons.scss"
+			],
+			[
+				"tod",
+				".todo"
+			],
+			[
+				"home",
+				"src\\layouts\\Home\\Home.js"
+			],
+			[
+				"nenu",
+				"src\\components\\Menu\\Menu.js"
+			],
+			[
+				"sociali",
+				"src\\components\\Socials\\SocialIcons.js"
+			],
+			[
+				"contac",
+				"src\\components\\Footer\\FooterContact.js"
+			],
+			[
+				"footercop",
+				"src\\components\\Footer\\FooterCopyright.js"
+			],
+			[
+				"footer cont",
+				"src\\components\\Footer\\FooterContact.js"
+			],
+			[
+				"footersc",
+				"src\\components\\Footer\\_footer.scss"
+			],
+			[
+				"json",
+				"package.json"
+			],
+			[
+				"inde",
+				"src\\index.scss"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"too",
+				".todo"
+			],
+			[
+				"tood",
+				".todo"
+			],
+			[
+				"icons",
+				"sass\\partials\\_icons.scss"
+			],
+			[
+				"head",
+				"sass\\partials\\_header.scss"
+			],
+			[
+				"colo",
+				"sass\\modules\\_colors.scss"
+			],
+			[
+				"funcs",
+				"sass\\modules\\_functions.scss"
+			],
+			[
+				"fucn",
+				"functions.php"
+			],
+			[
+				"inlinein",
+				"assets\\img\\svg\\inline-insta.svg.php"
+			],
+			[
+				"inline",
+				"assets\\img\\svg\\inline-invisalign.svg.php"
+			],
+			[
+				"styl",
+				"sass\\style.scss"
+			],
+			[
+				"style",
+				"assets\\css\\style.css"
+			],
+			[
+				"cta",
+				"sass\\partials\\_cta.scss"
+			],
+			[
+				"ico",
+				"sass\\partials\\_icons.scss"
+			],
+			[
+				"hea",
+				"header.php"
+			],
+			[
+				"base",
+				"sass\\partials\\_base.scss"
+			],
+			[
+				"st",
+				"style.css"
+			],
+			[
+				"fo",
+				"footer.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 178.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
