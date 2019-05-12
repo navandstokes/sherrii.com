@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import api from '../api'
 import { Grid } from '../components/grid'
 
@@ -7,7 +8,7 @@ export default class Main extends React.Component {
 		let items = {}
 		await api.getEntries({
 			content_type: `list`,
-			'fields.title': `${slug}`,
+			'fields.slug': `${slug}`,
 			include: `5`
 		}).then(data => {
 			items = data.items[0]

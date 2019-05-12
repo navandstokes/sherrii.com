@@ -1,6 +1,7 @@
 import React from 'react'
 import api from '../api'
 import Head from 'next/head'
+import { Viewer } from '../components/viewer'
 import { Grid } from '../components/grid'
 
 export default class Page extends React.Component {
@@ -47,6 +48,7 @@ export default class Page extends React.Component {
 				<Head>
 					<title>SHERRI CUI - {gallery.fields.title}</title>
 				</Head>
+				<Viewer items={gallery.fields.images} />
 				<Grid items={items} />
 			</div>
 		)

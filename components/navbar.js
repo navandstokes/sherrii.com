@@ -3,7 +3,9 @@ import Link from 'next/link'
 export const Navbar = props => {
 	const Items = props.items.map((item) => {
 		return (
-			<Link href={'/' + item.fields.slug} >
+			<Link href={'main?slug=' + item.fields.slug}
+				as={'/' + item.fields.slug} 
+				key={item.fields.title} >
 				<a className="ma3">{item.fields.title}</a>
 			</Link>
 		)
