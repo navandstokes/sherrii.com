@@ -18,7 +18,7 @@ class MyApp extends App {
       return data.items
     })
 
-    const about = {'fields': {'title': 'About', 'slug': 'about'}}
+    const about = {'fields': {'title': 'About', 'slug': 'about', 'pages': true}}
     const menu = lists.concat(about)
 
     return { pageProps, menu }
