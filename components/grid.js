@@ -5,7 +5,7 @@ export const Grid = props => {
 		return (
 			<div className="w-100 w-50-m w-25-l" key={item.fields.title}>
 				<Link href={'page?slug=' + item.fields.slug}
-					as={'/' + item.fields.category.toLowerCase() + '/' + item.fields.slug}
+					as={'/p/'+ item.fields.slug}
 					passHref>
 					<a>
 						<div className="aspect-ratio aspect-ratio--1x1 cover dim pointer"
