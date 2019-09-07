@@ -1,15 +1,12 @@
 export const Viewer = props => {
 	const Images = props.items.map(item => {
-		//TODO something is fucky with this CSS
 		return (
-			<div className="dib lh-solid" key={item.fields.title}>
-				<img className="vh-100-ns w-100 w-auto-ns db" src={item.fields.file.url} />
-			</div>
+			<img className="vh-100-ns w-100 w-auto-ns db" src={item.fields.file.url} key={item.fields.file.url} />
 		)
 	})
 
 	return (
-		<div className="vh-100-ns overflow-y-hidden overflow-x-scroll flex flex-column flex-row-ns">
+		<div className="vh-100-ns w-auto-ns flex flex-column flex-row-ns" id="horizontalViewer">
 			{Images}
 		</div>
 	)
