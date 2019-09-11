@@ -8,10 +8,8 @@ export const Grid = props => {
 					as={'/p/'+ item.fields.slug}
 					passHref>
 					<a>
-						<div className="aspect-ratio aspect-ratio--1x1 cover dim pointer"
-						style={{
-							backgroundImage: 'url(' + item.fields.images[0].fields.file.url + '?w=480)'
-						}}>
+						<div className="aspect-ratio aspect-ratio--1x1 cover dim pointer" >
+							<img src={item.fields.images[0].fields.file.url + '?fit=fill&w=480&h=480'} alt={item.fields.images[0].fields.title} />
 							<div className="absolute w-100 h-100 flex flex-column justify-center content-center">
 								<p className="tc ma0">{item.fields.title}</p>
 								<p className="i tc ma0">-view-</p>
@@ -24,6 +22,11 @@ export const Grid = props => {
 	})
 	return (
 		<div className="w-100 flex flex-row flex-wrap">
+		<style jsx>{`
+			a::hover div {
+				
+			}
+		`}</style>
 			{Items}
 		</div>
 	)
