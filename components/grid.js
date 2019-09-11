@@ -23,7 +23,7 @@ export const Grid = props => {
 		)
 	})
 	return (
-		<div className="w-100 flex flex-row flex-wrap bg-dark-gray">
+		<div className="w-100 flex flex-row flex-wrap">
 			{Items}
 		</div>
 	)

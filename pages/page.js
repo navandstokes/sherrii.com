@@ -64,7 +64,9 @@ export default class Page extends React.Component {
 		const Images = gallery.fields.images.map(item => {
 			totalWidth += item.fields.file.details.image.width * this.state.winHeight / item.fields.file.details.image.height
 			return (
-				<img className="vh-100 db" src={item.fields.file.url + '?h=' + this.state.winHeight} key={item.fields.file.url} />
+				<div>
+					<img className="vh-100 db" src={item.fields.file.url + '?h=' + this.state.winHeight} key={item.fields.file.url} />
+				</div>
 			)
 		})
 
@@ -72,7 +74,7 @@ export default class Page extends React.Component {
 		const offset = this.state.winWidth - totalWidth
 
 		return (
-			<div className="overflow-x-hidden">
+			<div className="overflow-x-hidden bg-dark-gray">
 				<Head>
 					<title>SHERRI CUI - {gallery.fields.title}</title>
 				</Head>
