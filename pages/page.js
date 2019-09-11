@@ -1,7 +1,6 @@
 import React from 'react'
 import api from '../api'
 import Head from 'next/head'
-import { Viewer } from '../components/viewer'
 import { Grid } from '../components/grid'
 import { Controller, Scene } from 'react-scrollmagic'
 import { Tween, Timeline } from 'react-gsap'
@@ -59,30 +58,57 @@ export default class Page extends React.Component {
 		if (this.props.error) {
 			return <div>Page not found.</div>
 		}
-
 		const { gallery, items } = this.props
-		const duration = this.state.elWidth / this.state.winHeight * 100
+
+		let totalWidth = 0
+		const Images = gallery.fields.images.map(item => {
+			totalWidth += item.fields.file.details.image.width * this.state.winHeight / item.fields.file.details.image.height
+			return (
+				<img className="vh-100 db" src={item.fields.file.url + '?h=' + this.state.winHeight} key={item.fields.file.url} />
+			)
+		})
+
+		const duration = totalWidth / this.state.winHeight * 100
+		const offset = this.state.winWidth - totalWidth
 
 		return (
 			<div className="overflow-x-hidden">
 				<Head>
 					<title>SHERRI CUI - {gallery.fields.title}</title>
 				</Head>
+				{ (this.state.winWidth > 1000 && totalWidth > this.state.winWidth) ? 
 				<Controller>
 					<Scene triggerHook={0} duration={duration + '%'} pin>
 						<Timeline>
 							<Tween  
 								from={{ x: '0px' }}
-								to={{ x: '-' + this.state.elWidth + 'px'  }}>
-								<div>
-									<Viewer items={gallery.fields.images} />
+								to={{ x: '-' + (totalWidth - this.state.winWidth) + 'px'  }}>
+								<div className="flex" style={{width: totalWidth + 'px'}}>
+									{Images}
 								</div>
 							</Tween>
 						</Timeline>
 					</Scene>
 				</Controller>
+				:
+				<ViewerMobile items={gallery.fields.images} />
+				}
 				<Grid items={items} />
 			</div>
 		)
 	}
+}
+
+const ViewerMobile = props => {
+	const Images = props.items.map(item => {
+		return (
+			<img className="vh-100-ns w-100 w-auto-ns db" src={item.fields.file.url} key={item.fields.file.url} />
+		)
+	})
+
+	return (
+		<div className="vh-100-ns w-auto-ns flex flex-column flex-row-ns" id="horizontalViewer">
+			{Images}
+		</div>
+	)
 }
