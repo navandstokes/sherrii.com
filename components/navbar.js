@@ -7,12 +7,12 @@ export const Navbar = props => {
 			<Link href={href}
 				as={'/' + item.fields.slug} 
 				key={item.fields.title} >
-				<a className="pv3 f5 tracked ttu">{item.fields.title}</a>
+				<a className="pv3 f7 tracked ttu">{item.fields.title}</a>
 			</Link>
 		)
 	})
 	return (
-		<div className="flex flex-column flex-row justify-between ph4 mw6-ns">
+		<div className="flex flex-column flex-row justify-between ph5 mw6-ns">
 			{Items}
 		</div>
 	)
