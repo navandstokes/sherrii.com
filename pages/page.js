@@ -64,8 +64,8 @@ export default class Page extends React.Component {
 		const Images = gallery.fields.images.map(item => {
 			totalWidth += item.fields.file.details.image.width * this.state.winHeight / item.fields.file.details.image.height
 			return (
-				<div>
-					<img className="vh-100 db" src={item.fields.file.url + '?h=' + this.state.winHeight} key={item.fields.file.url} />
+				<div key={item.fields.file.url}>
+					<img className="vh-100 db" src={item.fields.file.url + '?h=' + this.state.winHeight} />
 				</div>
 			)
 		})

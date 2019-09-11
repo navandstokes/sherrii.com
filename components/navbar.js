@@ -7,7 +7,7 @@ export const Navbar = props => {
 			<Link href={href}
 				as={'/' + item.fields.slug} 
 				key={item.fields.title} >
-				<a className="pv3">{item.fields.title}</a>
+				<a className="pv3 f5 tracked ttu">{item.fields.title}</a>
 			</Link>
 		)
 	})
