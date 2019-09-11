@@ -15,11 +15,13 @@ export const Grid = props => {
 				}
 				a div {
 					opacity: 0;
-					transition: all 0.3s ease;
-					transition-delay: 0.1s;
+					transition: all 0.1s ease;
+					transition-delay: 0s;
 				}
 				a:hover div {
 					opacity: 0.75;
+					transition-duration: 0.3s;
+					transition-delay: 0.1s;
 				}
 			`}</style>
 				<Link href={'page?slug=' + item.fields.slug}
