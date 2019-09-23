@@ -19,7 +19,7 @@ export const Grid = props => {
 					transition-delay: 0s;
 				}
 				a:hover div {
-					opacity: 0.75;
+					opacity: 1;
 					transition-duration: 0.3s;
 					transition-delay: 0.1s;
 				}
@@ -39,7 +39,7 @@ export const Grid = props => {
 		)
 	})
 	return (
-		<div className="w-100 flex flex-row flex-wrap">
+		<div className="w-100 flex flex-row flex-wrap bg-dark-gray">
 			{Items}
 		</div>
 	)
