@@ -63,9 +63,9 @@ export default class Page extends React.Component {
 
 		let totalWidth = 0
 		const Images = gallery.fields.images.map(item => {
-			totalWidth += item.fields.file.details.image.width * this.state.winHeight / item.fields.file.details.image.height
 			const ratio = item.fields.file.details.image.height / item.fields.file.details.image.width
 			const width = this.state.winHeight * (1 / ratio)
+			totalWidth += width
 			return (
 				<div key={item.fields.file.url} style={{width: width}}>
 					<Img className="vh-100 db" ratio={ratio} src={item.fields.file.url} />
@@ -96,7 +96,7 @@ export default class Page extends React.Component {
 					</Scene>
 				</Controller>
 				:
-				<ViewerMobile items={gallery.fields.images} />
+				<ViewerMobile items={gallery.fields.images} winHeight={this.state.winHeight} />
 				}
 				<Grid items={items} />
 			</div>
@@ -106,8 +106,12 @@ export default class Page extends React.Component {
 
 const ViewerMobile = props => {
 	const Images = props.items.map(item => {
+		const ratio = item.fields.file.details.image.height / item.fields.file.details.image.width
+		const width = props.winHeight * (1 / ratio)
 		return (
-			<img className="vh-100-ns w-100 w-auto-ns db" src={item.fields.file.url} key={item.fields.file.url} />
+		<div key={item.fields.file.url} style={{width: width}}>
+			<Img className="vh-100-ns w-100 w-auto-ns db" ratio={ratio} src={item.fields.file.url} key={item.fields.file.url} />
+		</div>
 		)
 	})
 
