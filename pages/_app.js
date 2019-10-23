@@ -12,14 +12,11 @@ class MyApp extends App {
       pageProps = await Component.getInitialProps(ctx)
     }
 
-    const lists = await api.getEntries({
+    const menu = await api.getEntries({
       content_type: `list`
     }).then(data => {
       return data.items
     })
-
-    const about = {'fields': {'title': 'About', 'slug': 'about', 'pages': true}}
-    const menu = lists.concat(about)
 
     return { pageProps, menu }
   }
