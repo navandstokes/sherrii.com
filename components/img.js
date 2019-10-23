@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 export const Img = props => {
@@ -6,6 +6,8 @@ export const Img = props => {
 		triggerOnce: true,
 		margin: '400px 0px'
 	})
+
+	const [loaded, setLoad] = useState(false)
 
 	const ratio = props.ratio ? props.ratio : (9/16)
 
@@ -25,7 +27,7 @@ export const Img = props => {
 						fontSize: '0'
 					}}
 					data-alt={props.alt} 
-					data-iesrc={props.src}>
+					data-iesrc={props.src} onLoad={() => {setLoad(true)}} >
 			<style jsx>{`
 				img {
 					width: 100%;
@@ -33,6 +35,8 @@ export const Img = props => {
 					object-fit: cover;
 					display: block;
 					vertical-align: top;
+					opacity: ${loaded ? 1 : 0};
+					transition: all 1s linear;
 				}
 				`}</style>
 				<source type="image/webp" 
@@ -44,6 +48,7 @@ export const Img = props => {
 						${props.src}?w=1600&fm=webp 1600w,
 						${props.src}?w=2000&fm=webp 2000w
 					`} 
+					sizes={props.sizes}
 				/>
 				<source type="image/jpeg" 
 					srcSet={`
@@ -54,6 +59,7 @@ export const Img = props => {
 						${props.src}?w=1600&fm=jpg 1600w,
 						${props.src}?w=2000&fm=jpg 2000w
 					`} 
+					sizes={props.sizes}
 				/>
 				{ inView &&
 					<img alt={props.alt} className={(props.className ? props.className : "")} />
