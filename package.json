@@ -23,6 +23,7 @@
     "react-dom": "^16.8.4",
     "react-gsap": "^1.2.0",
     "react-icons": "^3.4.0",
+    "react-intersection-observer": "^8.25.1",
     "react-scrollmagic": "^2.1.1",
     "react-spring": "^7.2.11",
     "react-waypoint": "^8.1.0"

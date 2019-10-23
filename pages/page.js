@@ -109,7 +109,7 @@ const ViewerMobile = props => {
 	})
 
 	return (
-		<div className="vh-100-ns w-auto-ns flex flex-column flex-row-ns" id="horizontalViewer">
+		<div className="vh-100-ns w-auto-ns flex flex-column" id="horizontalViewer">
 			{Images}
 		</div>
 	)
