@@ -2,6 +2,7 @@ import React from 'react'
 import api from '../api'
 import Head from 'next/head'
 import { Grid } from '../components/grid'
+import { Img } from '../components/img'
 import { Controller, Scene } from 'react-scrollmagic'
 import { Tween, Timeline } from 'react-gsap'
 
@@ -63,9 +64,11 @@ export default class Page extends React.Component {
 		let totalWidth = 0
 		const Images = gallery.fields.images.map(item => {
 			totalWidth += item.fields.file.details.image.width * this.state.winHeight / item.fields.file.details.image.height
+			const ratio = item.fields.file.details.image.height / item.fields.file.details.image.width
+			const width = this.state.winHeight * (1 / ratio)
 			return (
-				<div key={item.fields.file.url}>
-					<img className="vh-100 db" src={item.fields.file.url + '?h=' + this.state.winHeight} />
+				<div key={item.fields.file.url} style={{width: width}}>
+					<Img className="vh-100 db" ratio={ratio} src={item.fields.file.url} />
 				</div>
 			)
 		})

@@ -36,7 +36,7 @@ export const Img = props => {
 					display: block;
 					vertical-align: top;
 					opacity: ${loaded ? 1 : 0};
-					transition: all 1s linear;
+					transition: all 0.5s linear;
 				}
 				`}</style>
 				<source type="image/webp" 
@@ -48,7 +48,7 @@ export const Img = props => {
 						${props.src}?w=1600&fm=webp 1600w,
 						${props.src}?w=2000&fm=webp 2000w
 					`} 
-					sizes={props.sizes}
+					sizes={props.sizes ? props.sizes : '100vw'}
 				/>
 				<source type="image/jpeg" 
 					srcSet={`
@@ -59,7 +59,7 @@ export const Img = props => {
 						${props.src}?w=1600&fm=jpg 1600w,
 						${props.src}?w=2000&fm=jpg 2000w
 					`} 
-					sizes={props.sizes}
+					sizes={props.sizes ? props.sizes : '100vw'}
 				/>
 				{ inView &&
 					<img alt={props.alt} className={(props.className ? props.className : "")} />
