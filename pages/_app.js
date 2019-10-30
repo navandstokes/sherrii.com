@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'react/head'
 import App, { Container } from 'next/app'
 import api from '../api'
 import { Navbar } from '../components/navbar'
@@ -27,6 +28,10 @@ class MyApp extends App {
 
     return (
       <Container>
+        <Head>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+          <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
+        </Head>
         <Navbar items={menu} />
         <Component {...pageProps} />
       </Container>
