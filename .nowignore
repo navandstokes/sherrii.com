@@ -1,2 +1,6 @@
 .next
 node_modules
+.sublime-project
+.sublime-workspace
+/static/blog
+/static/engdes

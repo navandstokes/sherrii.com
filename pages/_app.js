@@ -13,7 +13,8 @@ class MyApp extends App {
     }
 
     const menu = await api.getEntries({
-      content_type: `list`
+      content_type: `list`,
+      order: 'fields.title'
     }).then(data => {
       return data.items
     })
