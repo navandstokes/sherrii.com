@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from 'react/head'
+import Head from 'next/head'
 import App, { Container } from 'next/app'
 import api from '../api'
 import { Navbar } from '../components/navbar'

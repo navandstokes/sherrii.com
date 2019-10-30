@@ -56,9 +56,12 @@ export default class About extends React.Component {
 							<span className="dib tr"><a href={'mailto:' + ux.fields.items[2].fields.value}>{ux.fields.items[2].fields.value}</a></span>
 						</div>
 					</div>
-					<div className="mt5 mt0-l w-30-l flex justify-center items-center">
+					<div className="mt5 mt0-l w-30-l flex flex-column flex-row-l justify-center items-center">
 						<div style={{width: '8rem', height: '8rem'}}>
 							<Img ratio={1} src={dp.fields.file.url} sizes="8rem" />
+						</div>
+						<div className="mh3" style={{width: '3rem'}}>
+							<img className="w-100 h-100" style={{objectFit: 'contain'}} src="../static/vertLogo.png" />
 						</div>
 					</div>
 				</div>
