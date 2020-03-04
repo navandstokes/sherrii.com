@@ -2,5 +2,5 @@
 node_modules
 .sublime-project
 .sublime-workspace
-/static/blog
-/static/engdes
+/public/blog
+/public/engdes

@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import Head from 'next/head'
-import api from '../api'
-import { Grid } from '../components/grid'
+import api from '../../api'
+import { Grid } from '../../components/grid'
 
 const Main = ({ items, error }) => {
 	if (error) {

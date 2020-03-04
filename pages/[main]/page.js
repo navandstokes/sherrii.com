@@ -1,108 +1,115 @@
-import React from 'react'
-import api from '../api'
+import { Fragment, useState, useEffect } from 'react'
+import api from '../../api'
 import Head from 'next/head'
-import { Grid } from '../components/grid'
-import { Img } from '../components/img'
+import { Grid } from '../../components/grid'
+import { Img } from '../../components/img'
 import { Controller, Scene } from 'react-scrollmagic'
 import { Tween, Timeline } from 'react-gsap'
 
-export default class Page extends React.Component {
-	constructor() {
-		super()
-		this.state = {
-			elWidth: 0,
-			width: 0,
-			winHeight: 0
-		}
-	}
-	static async getInitialProps ({query: {slug}, res}) {
-		let gallery = {}
-		let cat = ''
-		let items = {}
-		await api.getEntries({
-			content_type: `gallery`,
-			'fields.slug': `${slug}`,
-			include: `5`
-		}).then(data => {
-			gallery = data.items[0]
-			cat = data.items[0].fields.category
-		})
-
-		await api.getEntries({
-			content_type: `list`,
-			'fields.title': `${cat}`,
-			include: `5`
-		}).then(itemsData => {
-			items = itemsData.items[0]
-		})
-
-		if (gallery) {
-			return { gallery, items }
-		}
-
-		if (res) {
-			res.statusCode = 404
-		}
-
-		return { error: true }
+const Page = ({ gallery, items, error }) => {
+	if (error) {
+		return <div>Page not found.</div>
 	}
 
-	componentDidMount() {
+	const [width, setWidth] = useState({
+		elWidth: 0, 
+		winWidth: 0, 
+		winHeight: 0, 
+		totalWidth: 0
+	})
+
+	useEffect(() => {
+		setWidth(prev => {
+			elWidth: document.getElementById('horizontalViewer').offsetWidth,
+			winWidth
+		})
+
 		this.setState({
 			elWidth: document.getElementById('horizontalViewer').offsetWidth,
 			winWidth: window.innerWidth,
-			winHeight: window.innerHeight
+			winHeight: window.innerHeight,
+			totalWidth: prev.totalWidth
 		})
-	}
+	}, [])
 
-	render () {
-		if (this.props.error) {
-			return <div>Page not found.</div>
-		}
-		const { gallery, items } = this.props
-
-		let totalWidth = 0
-		const Images = gallery.fields.images.map(item => {
-			const ratio = item.fields.file.details.image.height / item.fields.file.details.image.width
-			const width = this.state.winHeight * (1 / ratio)
-			totalWidth += width
-			return (
-				<div key={item.fields.file.url} style={{width: width}}>
-					<Img className="vh-100 db" ratio={ratio} src={item.fields.file.url} />
-				</div>
-			)
+	const Images = gallery.fields.images.map(item => {
+		const ratio = item.fields.file.details.image.height / item.fields.file.details.image.width
+		const w = width.winHeight / ratio
+		setWidth(prev => {
+			elWidth: prev.elWidth, 
+			winWidth: prev.winWidth,
+			winHeight: prev.winHeight,
+			totalWidth: prev.totalWidth + w
 		})
-
-		const duration = totalWidth / this.state.winHeight * 100
-		const offset = this.state.winWidth - totalWidth
-
 		return (
-			<div className="overflow-x-hidden bg-dark-gray">
-				<Head>
-					<title>SHERRI CUI - {gallery.fields.title}</title>
-				</Head>
-				{ (this.state.winWidth > 1000 && totalWidth > this.state.winWidth) ? 
-				<Controller>
-					<Scene triggerHook={0} duration={duration + '%'} pin>
-						<Timeline>
-							<Tween  
-								from={{ x: '0px' }}
-								to={{ x: '-' + (totalWidth - this.state.winWidth) + 'px'  }}>
-								<div className="flex" style={{width: totalWidth + 'px'}}>
-									{Images}
-								</div>
-							</Tween>
-						</Timeline>
-					</Scene>
-				</Controller>
-				:
-				<ViewerMobile items={gallery.fields.images} winHeight={this.state.winHeight} />
-				}
-				<Grid items={items} />
+			<div key={item.fields.file.url} style={{width: w}}>
+				<Img className="vh-100 db" ratio={ratio} src={item.fields.file.url} />
 			</div>
 		)
-	}
+	})
+
+	const duration = width.totalWidth / width.winHeight * 100
+	const offset = width.winWidth - width.totalWidth
+
+	return (
+		<div className="overflow-x-hidden bg-dark-gray">
+			<Head>
+				<title>SHERRI CUI - {gallery.fields.title}</title>
+			</Head>
+			{ (width.winWidth > 1000 && width.totalWidth > width.winWidth) ? 
+			<Controller>
+				<Scene triggerHook={0} duration={duration + '%'} pin>
+					<Timeline>
+						<Tween  
+							from={{ x: '0px' }}
+							to={{ x: '-' + (width.totalWidth - width.winWidth) + 'px'  }}>
+							<div className="flex" style={{width: width.totalWidth + 'px'}}>
+								{Images}
+							</div>
+						</Tween>
+					</Timeline>
+				</Scene>
+			</Controller>
+			:
+			<ViewerMobile items={gallery.fields.images} winHeight={width.winHeight} />
+			}
+			<Grid items={items} />
+		</div>
+	)
 }
+
+Page.getInitialProps = async ({ res }) => {
+	let gallery, cat, items = {}
+
+	await api.getEntries({
+		content_type: `gallery`,
+		'fields.slug': `${slug}`,
+		include: `5`
+	}).then(data => {
+		gallery = data.items[0]
+		cat = data.items[0].fields.category
+	})
+
+	await api.getEntries({
+		content_type: `list`,
+		'fields.title': `${cat}`,
+		include: `5`
+	}).then(itemsData => {
+		items = itemsData.items[0]
+	})
+
+	if (gallery) {
+		return { gallery, items }
+	}
+
+	if (res) {
+		res.statusCode = 404
+	}
+
+	return { error: true }
+}
+
+export default Page
 
 const ViewerMobile = props => {
 	const Images = props.items.map(item => {

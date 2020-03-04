@@ -33,7 +33,7 @@ const About = ({ ux, dp, error }) => {
 						<Img ratio={1} src={dp.fields.file.url} sizes="8rem" />
 					</div>
 					<div className="mh3" style={{width: '3rem'}}>
-						<img className="w-100 h-100" style={{objectFit: 'contain'}} src="../static/vertLogo.png" />
+						<img className="w-100 h-100" style={{objectFit: 'contain'}} src="/vertLogo.png" />
 					</div>
 				</div>
 			</div>

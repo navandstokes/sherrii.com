@@ -1,14 +1,15 @@
 import { Fragment, useEffect } from 'react'
+import App from 'next/app'
 import Router from 'next/router'
 import Head from 'next/head'
 import api from '../api'
 import { Navbar } from '../components/navbar'
-import '../static/index.css'
+import '../lib/index.css'
 
 import NProgress from 'nprogress'
 
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, menu }) {
 
   useEffect(() => {
     Router.events.on('routeChangeStart', url => {
