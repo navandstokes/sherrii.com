@@ -12,11 +12,11 @@ export const Navbar = props => {
 		)
 	})
 	return (
-		<div className="flex-l justify-between">
-			<div className="flex flex-column flex-row justify-between ph2 ph5-l mw6-ns" style={{flexGrow: '1'}}>
+		<div className="flex flex-column-reverse flex-row-l justify-between-l">
+			<div className="flex flex-column flex-row justify-between ph3 ph5-l mw6-ns" style={{flexGrow: '1'}}>
 				{Items}
 			</div>
-			<div className="dn db-l ph5-l flex justify-center items-center w5">
+			<div className="dn db-l ph5 pv3 flex justify-center items-center w5-l">
 				<Link href="/" passHref>
 					<img className="w-100 h-100 pointer" style={{objectFit: 'contain'}} src="/horzLogo.png" />
 				</Link>				

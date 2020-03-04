@@ -17,12 +17,12 @@ const Main = ({ items, error }) => {
 	)
 }
 
-Main.getInitialProps = async ({ query: { slug }, res }) => {
+Main.getInitialProps = async ({ query: { main }, res }) => {
 	let items = {}
 
 	await api.getEntries({
 		content_type: `list`,
-		'fields.slug': `${slug}`,
+		'fields.slug': `${main}`,
 		include: `5`
 	}).then(data => {
 		items = data.items[0]

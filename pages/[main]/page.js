@@ -78,7 +78,7 @@ const Page = ({ gallery, items, error }) => {
 	)
 }
 
-Page.getInitialProps = async ({ res }) => {
+Page.getInitialProps = async ({ query: { main, slug } res }) => {
 	let gallery, cat, items = {}
 
 	await api.getEntries({
@@ -92,7 +92,7 @@ Page.getInitialProps = async ({ res }) => {
 
 	await api.getEntries({
 		content_type: `list`,
-		'fields.title': `${cat}`,
+		'fields.title': `${main}`,
 		include: `5`
 	}).then(itemsData => {
 		items = itemsData.items[0]
