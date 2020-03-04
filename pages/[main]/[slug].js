@@ -104,11 +104,8 @@ export default Page
 const ViewerMobile = props => {
 	const Images = props.items.map(item => {
 		const ratio = item.fields.file.details.image.height / item.fields.file.details.image.width
-		const width = props.winHeight * (1 / ratio)
 		return (
-		<div key={item.fields.file.url} style={{width: width}}>
 			<Img className="vh-100-ns w-100 w-auto-ns db" ratio={ratio} src={item.fields.file.url} key={item.fields.file.url} />
-		</div>
 		)
 	})
 

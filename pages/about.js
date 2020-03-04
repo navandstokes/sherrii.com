@@ -13,7 +13,7 @@ const About = ({ ux, dp, error }) => {
 			<Head>
 				<title>SHERRI CUI - About</title>
 			</Head>
-			<div className="vh-75-l flex-l mh3 justify-center items-center">
+			<div className="vh-75-l flex-l ph3 justify-center items-center">
 				<div className="mt5 mt0-l w-40-l ph3 pr4-l">
 					<div className="flex justify-between mb3">
 						<span className="b ttu tracked f7 dib mr5">Current Location:</span>
@@ -32,7 +32,7 @@ const About = ({ ux, dp, error }) => {
 					<div style={{width: '8rem', height: '8rem'}}>
 						<Img ratio={1} src={dp.fields.file.url} sizes="8rem" />
 					</div>
-					<div className="mh3" style={{width: '3rem'}}>
+					<div className="ma3" style={{width: '3rem'}}>
 						<img className="w-100 h-100" style={{objectFit: 'contain'}} src="/vertLogo.png" />
 					</div>
 				</div>
