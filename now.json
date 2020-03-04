@@ -1,14 +1,18 @@
 {
 	"version": 2,
-	"name": "sherrii",
-	"builds": [
-		{ "src": "package.json", "use": "@now/next" }
+	"trailingSlash": true,
+	"rewrites": [
+		{"source": "/", "destination": "/portraits"}
 	],
-	"routes": [
-		{ "src": "/about", "dest": "/about"},
-		{ "src": "/p/(?<slug>[^/]+)$", "dest": "/page?slug=$slug" },
-		{ "src": "/(?<slug>[^/]+)$", "dest": "/main?slug=$slug" },
-		{ "src": "/", "dest": "/main?slug=portraits"},
-		{ "src": "/(.*)", "dest": "/$1" }
+	"headers": [
+	  {
+	    "source": "/(.*)",
+	    "headers": [
+	      {
+	        "key": "Cache-Control",
+	        "value": "s-maxage=600, stale-while-revalidate"
+	      }
+	    ]
+	  }
 	]
 }
