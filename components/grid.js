@@ -29,7 +29,7 @@ export const Grid = props => {
 					as={'/p/'+ item.fields.slug}
 					passHref>
 					<a className="db pointer relative">
-						<Img ratio={1} sizes="25vw" className="db" src={item.fields.images[0].fields.file.url} alt={item.fields.images[0].fields.title} />
+						<Img ratio={1} sizes="(min-width: 60em) 25vw" className="db" src={item.fields.images[0].fields.file.url} alt={item.fields.images[0].fields.title} />
 						<span className="db absolute top-0 left-0 w-100 h-100 bg-black"></span>
 						<div className="absolute top-0 left-0 w-100 h-100 flex flex-column justify-center content-center white">
 							<p className="tc ma0">{item.fields.title}</p>
