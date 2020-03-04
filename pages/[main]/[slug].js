@@ -14,33 +14,23 @@ const Page = ({ gallery, items, error }) => {
 	const [width, setWidth] = useState({
 		elWidth: 0, 
 		winWidth: 0, 
-		winHeight: 0, 
-		totalWidth: 0
+		winHeight: 0
 	})
 
 	useEffect(() => {
-		setWidth(prev => {
-			elWidth: document.getElementById('horizontalViewer').offsetWidth,
-			winWidth
-		})
-
-		this.setState({
+		setWidth(prev => ({
 			elWidth: document.getElementById('horizontalViewer').offsetWidth,
 			winWidth: window.innerWidth,
-			winHeight: window.innerHeight,
-			totalWidth: prev.totalWidth
-		})
+			winHeight: window.innerHeight
+		}))
 	}, [])
+
+	let totalWidth = 0
 
 	const Images = gallery.fields.images.map(item => {
 		const ratio = item.fields.file.details.image.height / item.fields.file.details.image.width
 		const w = width.winHeight / ratio
-		setWidth(prev => {
-			elWidth: prev.elWidth, 
-			winWidth: prev.winWidth,
-			winHeight: prev.winHeight,
-			totalWidth: prev.totalWidth + w
-		})
+		totalWidth += w
 		return (
 			<div key={item.fields.file.url} style={{width: w}}>
 				<Img className="vh-100 db" ratio={ratio} src={item.fields.file.url} />
@@ -48,22 +38,22 @@ const Page = ({ gallery, items, error }) => {
 		)
 	})
 
-	const duration = width.totalWidth / width.winHeight * 100
-	const offset = width.winWidth - width.totalWidth
+	const duration = totalWidth / width.winHeight * 100
+	const offset = width.winWidth - totalWidth
 
 	return (
 		<div className="overflow-x-hidden bg-dark-gray">
 			<Head>
 				<title>SHERRI CUI - {gallery.fields.title}</title>
 			</Head>
-			{ (width.winWidth > 1000 && width.totalWidth > width.winWidth) ? 
+			{ (width.winWidth > 1000 && totalWidth > width.winWidth) ? 
 			<Controller>
 				<Scene triggerHook={0} duration={duration + '%'} pin>
 					<Timeline>
 						<Tween  
 							from={{ x: '0px' }}
-							to={{ x: '-' + (width.totalWidth - width.winWidth) + 'px'  }}>
-							<div className="flex" style={{width: width.totalWidth + 'px'}}>
+							to={{ x: '-' + (totalWidth - width.winWidth) + 'px'  }}>
+							<div className="flex" style={{width: totalWidth + 'px'}}>
 								{Images}
 							</div>
 						</Tween>
@@ -78,8 +68,8 @@ const Page = ({ gallery, items, error }) => {
 	)
 }
 
-Page.getInitialProps = async ({ query: { main, slug } res }) => {
-	let gallery, cat, items = {}
+Page.getInitialProps = async ({ query: { main, slug }, res }) => {
+	let gallery, cat, items 
 
 	await api.getEntries({
 		content_type: `gallery`,
@@ -92,7 +82,7 @@ Page.getInitialProps = async ({ query: { main, slug } res }) => {
 
 	await api.getEntries({
 		content_type: `list`,
-		'fields.title': `${main}`,
+		'fields.title': `${cat}`,
 		include: `5`
 	}).then(itemsData => {
 		items = itemsData.items[0]
