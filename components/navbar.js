@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const Navbar = props => {
 	const Items = props.items.map((item, index) => {
-		const href = item.fields.pages ? '/' + item.fields.slug : 'main?slug=' + item.fields.slug
+		const href = item.fields.slug == 'about' ? { pathname: '/about' } : { pathname: '/[main]', query: { main: item.fields.slug} }
 		return (
 			<Link href={href}
 				as={'/' + item.fields.slug} 

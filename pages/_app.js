@@ -5,6 +5,7 @@ import Head from 'next/head'
 import api from '../api'
 import { Navbar } from '../components/navbar'
 import '../lib/index.css'
+import '../lib/nprogress.css'
 
 import NProgress from 'nprogress'
 
@@ -14,16 +15,12 @@ function MyApp({ Component, pageProps, menu }) {
   useEffect(() => {
     Router.events.on('routeChangeStart', url => {
       NProgress.inc()
-      // NTrans.start()
     })
     Router.events.on('routeChangeError', () => {
       NProgress.done() 
-      // NTrans.done()
     })
     Router.events.on('routeChangeComplete', url => {
       NProgress.done()
-      // NTrans.done(bgColor)
-      gtag.pageview(url)
     })
   }, [])
 
