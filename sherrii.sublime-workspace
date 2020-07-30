@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getInitialProps"
+			],
+			[
 				"react",
 				"react-icons"
 			],
@@ -171,14 +175,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "pages/page.js",
-			"settings":
-			{
-				"buffer_size": 3076,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -191,6 +187,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"close pr",
+				"Project: Close"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
 			[
 				"push",
 				"Git: Push Current Branch"
@@ -694,14 +698,6 @@
 			[
 				"color ",
 				"UI: Select Color Scheme"
-			],
-			[
-				"theme",
-				"Material Theme: Advanced configuration"
-			],
-			[
-				"select the",
-				"UI: Select Theme"
 			]
 		],
 		"width": 453.0
@@ -730,17 +726,34 @@
 	],
 	"file_history":
 	[
-		"/C/React/sherrii/components/img.js",
-		"/C/React/sherrii/components/navbar.js",
-		"/C/React/sherrii/pages/about.js",
-		"/C/React/sherrii/pages/main.js",
-		"/C/React/sherrii/package.json",
 		"/C/React/sherrii/pages/_app.js",
+		"/C/React/sherrii/components/navbar.js",
+		"/C/React/sherrii/pages/_document.js",
+		"/C/React/sherrii/lib/nprogress.css",
+		"/C/React/vogue-new/lib/nprogress.css",
+		"/C/React/sherrii/pages/[main]/index.js",
 		"/C/React/sherrii/now.json",
-		"/C/React/sherrii/pages/page.js",
-		"/C/React/sherrii/next.config.js",
-		"/C/React/sherrii/.nowignore",
+		"/C/React/sherrii/pages/index.js",
 		"/C/React/sherrii/components/grid.js",
+		"/C/React/sherrii/pages/[main]/[slug].js",
+		"/C/React/sherrii/pages/about.js",
+		"/C/React/sherrii/next.config.js",
+		"/C/React/vogue-new/prod.now.json",
+		"/C/React/vogue-new/now.json",
+		"/C/React/vogue-new/components/Scroll.js",
+		"/C/React/sherrii/package.json",
+		"/C/React/sherrii/pages/[main]/page.js",
+		"/C/React/sherrii/.nowignore",
+		"/C/React/sherrii/.gitignore",
+		"/C/React/vogue-new/.gitignore",
+		"/C/React/vogue-new/pages/[main]/[slug].js",
+		"/C/React/vogue-new/pages/index.js",
+		"/C/React/vogue-new/pages/_app.js",
+		"/C/React/sherrii/api.js",
+		"/C/React/cbc-new/now.json",
+		"/C/React/sherrii/pages/page.js",
+		"/C/React/sherrii/components/img.js",
+		"/C/React/sherrii/pages/main.js",
 		"/C/React/sherrii/.todo",
 		"/C/React/bbasf-next/pages/index.js",
 		"/C/React/sherrii/components/viewer.js",
@@ -840,28 +853,11 @@
 		"/C/xampp/htdocs/React/sherrii/static/blog/160106.md",
 		"/C/xampp/htdocs/React/sherrii/static/blog/160105.md",
 		"/C/xampp/htdocs/React/sherrii/static/blog/151109.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/151104.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/151007.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/131215.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/131213.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/131008.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/130924.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/130923.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/130922.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/130921.md",
-		"/C/xampp/htdocs/React/sherrii/static/blog/130920.md",
-		"/C/xampp/htdocs/React/vogue-next/static/generic.scss",
-		"/C/xampp/htdocs/React/vogue-next/components/Section.js",
-		"/C/xampp/htdocs/React/vogue-next/.todo",
-		"/C/xampp/htdocs/React/vogue-next/static/empty.scss",
-		"/C/xampp/htdocs/React/vogue-next/components/lib/apsuedo.js",
-		"/C/xampp/htdocs/React/vogue-next/components/Sidebar.js",
-		"/C/xampp/htdocs/React/vogue-next/components/lib/logo.js",
-		"/C/xampp/htdocs/React/vogue-next/pages/gallery.js"
+		"/C/xampp/htdocs/React/sherrii/static/blog/151104.md"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -875,6 +871,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"width.totalWidth",
+			"width.wid",
 			"<domain>",
 			"ux",
 			"fields",
@@ -969,6 +967,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"totalWidth",
 			"bringbackasmile.org",
 			"voguecreativestudios.com",
 			"items",
@@ -1013,224 +1012,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "pages/page.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3076,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1689,
-								1689
-							]
-						],
-						"settings":
-						{
-							"SL.17.region_keys":
-							[
-							],
-							"SL.650.region_keys":
-							[
-							],
-							"bracket_highlighter.busy": false,
-							"bracket_highlighter.clone": -1,
-							"bracket_highlighter.clone_locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1698,
-										1699
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1351,
-										1352
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.clone_regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"bracket_highlighter.locations":
-							{
-								"close":
-								{
-									"1":
-									[
-										1693,
-										1694
-									]
-								},
-								"icon":
-								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
-								},
-								"open":
-								{
-									"1":
-									[
-										1541,
-										1542
-									]
-								},
-								"unmatched":
-								{
-								}
-							},
-							"bracket_highlighter.regions":
-							[
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"color_scheme": "Packages/User/Color Highlighter/themes/predawn.tmTheme",
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1101.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		},
 		{
@@ -1267,7 +1050,7 @@
 		"cols":
 		[
 			0.0,
-			1.0,
+			0.0,
 			1.0
 		],
 		"rows":
@@ -1319,6 +1102,54 @@
 		"selected_items":
 		[
 			[
+				"navbar",
+				"components\\navbar.js"
+			],
+			[
+				"app",
+				"pages\\_app.js"
+			],
+			[
+				"grid",
+				"components\\grid.js"
+			],
+			[
+				"index",
+				"pages\\[main]\\index.js"
+			],
+			[
+				"now",
+				"now.json"
+			],
+			[
+				"about",
+				"pages\\about.js"
+			],
+			[
+				"no",
+				"now.json"
+			],
+			[
+				"page",
+				"pages\\[main]\\page.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"_app",
+				"pages\\_app.js"
+			],
+			[
+				"api",
+				"api.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
 				"main",
 				"pages\\main.js"
 			],
@@ -1327,27 +1158,7 @@
 				"components\\navbar.js"
 			],
 			[
-				"pack",
-				"package.json"
-			],
-			[
 				"now.json",
-				"now.json"
-			],
-			[
-				"navbar",
-				"components\\navbar.js"
-			],
-			[
-				"packa",
-				"package.json"
-			],
-			[
-				"about",
-				"pages\\about.js"
-			],
-			[
-				"now",
 				"now.json"
 			],
 			[
@@ -1355,24 +1166,8 @@
 				"next.config.js"
 			],
 			[
-				"page",
-				"pages\\page.js"
-			],
-			[
-				"_app",
-				"pages\\_app.js"
-			],
-			[
 				"img",
 				"components\\img.js"
-			],
-			[
-				"grid",
-				"components\\grid.js"
-			],
-			[
-				"app",
-				"pages\\_app.js"
 			],
 			[
 				"menu",
@@ -1401,10 +1196,6 @@
 			[
 				"nav",
 				"components\\Navbar.js"
-			],
-			[
-				"api",
-				"api.js"
 			],
 			[
 				"gallery",
@@ -1517,10 +1308,6 @@
 			[
 				"index.css",
 				"index.css"
-			],
-			[
-				"index",
-				"pages\\index.js"
 			],
 			[
 				"ind",
@@ -1825,10 +1612,6 @@
 			[
 				"hea",
 				"header.php"
-			],
-			[
-				"base",
-				"sass\\partials\\_base.scss"
 			]
 		],
 		"width": 0.0
@@ -1851,12 +1634,12 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 		"max_pane":
 		{
-			"group": 0,
+			"group": 1,
 			"layout":
 			{
 				"cells":

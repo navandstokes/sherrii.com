@@ -15,17 +15,13 @@
   "author": "Sherri Cui <sherrii@pm.me>",
   "license": "ISC",
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
     "contentful": "^7.9.1",
-    "next": "^9.2.2",
+    "next": "^9.5.1",
     "nprogress": "^0.2.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-gsap": "^1.2.0",
-    "react-icons": "^3.4.0",
     "react-intersection-observer": "^8.25.1",
-    "react-scrollmagic": "^2.1.1",
-    "react-spring": "^7.2.11",
-    "react-waypoint": "^8.1.0"
+    "react-scrollmagic": "^2.1.1"
   }
 }
