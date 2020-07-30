@@ -40,7 +40,7 @@ export async function getStaticPaths() {
 			if (item.fields.slug != 'about') {
 				return { params: { main: item.fields.slug }}
 			}
-		}
+		})
 	})
 
 	return { paths, fallback: false }
