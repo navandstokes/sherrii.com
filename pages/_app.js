@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps, menu }) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+        <meta name="description" content="Photographer and retoucher from Toronto, Canada." />
       </Head>
       <Navbar items={menu} />
       <Component {...pageProps} />
