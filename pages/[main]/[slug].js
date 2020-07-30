@@ -64,7 +64,7 @@ function Page({ gallery, items }) {
 	)
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps({ params: { slug }}) {
 	let gallery, cat, items 
 
 	await api.getEntries({
@@ -87,6 +87,19 @@ export async function getStaticProps(context) {
 	return {
 		props: {gallery, items},
 	}
+}
+
+export async function getStaticPaths() {
+	let paths
+
+	await api.getEntries({
+		content_type: `gallery`,
+		include: `1`
+	}).then(data => {
+		paths = data.items.map(item => ({ params: { slug: item.fields.slug, main: 'p' }}))
+	})
+
+	return { paths, fallback: false }
 }
 
 export default Page

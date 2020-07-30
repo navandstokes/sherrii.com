@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import App from 'next/app'
 import Router from 'next/router'
 import Head from 'next/head'
 import api from 'api'

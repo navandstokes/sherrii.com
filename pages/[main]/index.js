@@ -13,7 +13,7 @@ const Main = ({ items }) => {
 	)
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps({ params: { main }}) {
 	let items = {}
 
 	await api.getEntries({
@@ -25,8 +25,21 @@ export async function getStaticProps(context) {
 	})
 
 	return {
-		props: {items}, 
+		props: {items}
 	}
+}
+
+export async function getStaticPaths() {
+	let paths
+
+	await api.getEntries({
+		content_type: `list`,
+		include: `4`
+	}).then(data => {
+		paths = data.items.map(item => ({ params: { main: item.fields.slug }}))
+	})
+
+	return { paths, fallback: false }
 }
 
 export default Main

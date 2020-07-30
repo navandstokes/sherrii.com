@@ -25,7 +25,7 @@ export const Grid = props => {
 					transition-delay: 0.1s;
 				}
 			`}</style>
-				<Link href={'page?slug=' + item.fields.slug}
+				<Link href={{pathname: '/[main]/[slug]', query: { slug: item.fields.slug }}}
 					as={'/p/'+ item.fields.slug}
 					passHref>
 					<a className="db pointer relative">
