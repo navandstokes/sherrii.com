@@ -36,7 +36,11 @@ export async function getStaticPaths() {
 		content_type: `list`,
 		include: `4`
 	}).then(data => {
-		paths = data.items.map(item => ({ params: { main: item.fields.slug }}))
+		paths = data.items.map(item => {
+			if (item.fields.slug != 'about') {
+				return { params: { main: item.fields.slug }}
+			}
+		}
 	})
 
 	return { paths, fallback: false }
