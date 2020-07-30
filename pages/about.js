@@ -1,15 +1,10 @@
-import { Fragment } from 'react'
 import Head from 'next/head'
 import api from '../api'
 import { Img } from '../components/img'
 
-const About = ({ ux, dp, error }) => {
-	if (error) {
-		return <div>Page not found.</div>
-	}
-
+function About({ ux, dp }) {
 	return (
-		<Fragment>
+		<>
 			<Head>
 				<title>SHERRI CUI - About</title>
 			</Head>
@@ -37,11 +32,11 @@ const About = ({ ux, dp, error }) => {
 					</div>
 				</div>
 			</div>
-		</Fragment>
-	)
+		</>
+		)
 }
 
-About.getInitialProps = async ({ res }) => {
+export async function getStaticProps(context) {
 	let ux, dp = ''
 
 	await api.getEntries({
@@ -55,15 +50,9 @@ About.getInitialProps = async ({ res }) => {
 		dp = asset
 	})
 
-	if (ux && dp) {
-		return { ux, dp }
+	return {
+		props: {ux, dp}
 	}
-
-	if (res) {
-		res.statusCode = 404
-	}
-
-	return { error: true}
 }
 
 export default About

@@ -1,14 +1,12 @@
-import { Fragment, useEffect } from 'react'
-import App from 'next/app'
+import { useEffect } from 'react'
 import Router from 'next/router'
 import Head from 'next/head'
-import api from '../api'
-import { Navbar } from '../components/navbar'
-import '../lib/index.css'
-import '../lib/nprogress.css'
+import api from 'api'
+import { Navbar } from 'components/navbar'
+import 'lib/index.css'
+import 'lib/nprogress.css'
 
 import NProgress from 'nprogress'
-
 
 function MyApp({ Component, pageProps, menu }) {
 
@@ -25,13 +23,13 @@ function MyApp({ Component, pageProps, menu }) {
   }, [])
 
   return (
-    <Fragment>
+    <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
       </Head>
       <Navbar items={menu} />
       <Component {...pageProps} />
-    </Fragment>
+    </>
   )
 }
 

@@ -1,23 +1,19 @@
-import { Fragment } from 'react'
 import Head from 'next/head'
-import api from '../api'
-import { Grid } from '../components/grid'
+import api from 'api'
+import { Grid } from 'components/grid'
 
-const Main = ({ items, error }) => {
-	if (error) {
-		return <div>Page not found.</div>
-	}
+function Main({ items, error }) {
 	return (
-		<Fragment>
+		<>
 			<Head>
 				<title>SHERRI CUI - {items.fields.title}</title>
 			</Head>
 			<Grid items={items} />
-		</Fragment>
+		</>
 	)
 }
 
-Main.getInitialProps = async ({ res }) => {
+export async function getStaticProps() {
 	let items = {}
 
 	await api.getEntries({
@@ -28,15 +24,9 @@ Main.getInitialProps = async ({ res }) => {
 		items = data.items[0]
 	})
 
-	if (items) { 
-		return { items }
+	return {
+		props: {items}
 	}
-
-	if (res) { 
-		res.statusCode = 404
-	}
-
-	return { error: true }
 }
 
 export default Main

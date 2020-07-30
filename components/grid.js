@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Img } from '../components/img'
+import { Img } from 'components/img'
 
 export const Grid = props => {
 	const Items = props.items.fields.items.map((item) => {

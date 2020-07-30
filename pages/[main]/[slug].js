@@ -1,16 +1,12 @@
-import { Fragment, useState, useEffect } from 'react'
-import api from '../../api'
+import { useState, useEffect } from 'react'
+import api from 'api'
 import Head from 'next/head'
-import { Grid } from '../../components/grid'
-import { Img } from '../../components/img'
+import { Grid } from 'components/grid'
+import { Img } from 'components/img'
 import { Controller, Scene } from 'react-scrollmagic'
 import { Tween, Timeline } from 'react-gsap'
 
-const Page = ({ gallery, items, error }) => {
-	if (error) {
-		return <div>Page not found.</div>
-	}
-
+function Page({ gallery, items }) {
 	const [width, setWidth] = useState({
 		elWidth: 0, 
 		winWidth: 0, 
@@ -68,7 +64,7 @@ const Page = ({ gallery, items, error }) => {
 	)
 }
 
-Page.getInitialProps = async ({ query: { main, slug }, res }) => {
+export async function getStaticProps(context) {
 	let gallery, cat, items 
 
 	await api.getEntries({
@@ -88,15 +84,9 @@ Page.getInitialProps = async ({ query: { main, slug }, res }) => {
 		items = itemsData.items[0]
 	})
 
-	if (gallery) {
-		return { gallery, items }
+	return {
+		props: {gallery, items},
 	}
-
-	if (res) {
-		res.statusCode = 404
-	}
-
-	return { error: true }
 }
 
 export default Page

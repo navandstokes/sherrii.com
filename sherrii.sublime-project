@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "C:\\React\\vogue-new\\node_modules"
 		}
 	]
 }
