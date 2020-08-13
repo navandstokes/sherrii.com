@@ -18,7 +18,7 @@ export const Navbar = props => {
 			</div>
 			<div className="dn db-l ph5 pv3 flex justify-center items-center w5-l">
 				<Link href="/" passHref>
-					<img className="w-100 h-100 pointer" style={{objectFit: 'contain'}} src="/horzLogo.png" />
+					<img className="w-100 h-100 pointer" style={{objectFit: 'contain'}} src="/horzLogo.png" alt="Sherri Cui logo" />
 				</Link>				
 			</div>
 		</div>
