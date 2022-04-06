@@ -9,7 +9,20 @@ function Main({ items, error }) {
 			</Head>
 			<style jsx>{`
 				.text {
-					background: -webkit-linear-gradient(
+					background-image: -webkit-linear-gradient(
+						135deg,
+						#6366f1,
+						#a855f7,
+						#ec4899
+					);
+					background-image: -moz-linear-gradient(
+						135deg,
+						#6366f1,
+						#a855f7,
+						#ec4899
+					);
+					background-image: linear-gradient(
+						135deg,
 						#6366f1,
 						#a855f7,
 						#ec4899
@@ -19,12 +32,24 @@ function Main({ items, error }) {
 				}
 			`}</style>
 			<div className="min-h-screen w-full bg-stone-50 flex items-center justify-center">
-				<div className="max-w-screen-sm grid gap-6 text">
-					<Item link="/">Resume</Item>
-					<Item link="/portraits">Photos</Item>
-					<Item link="https://thebox.sherrii.vercel.app/">
-						The Box
-					</Item>
+				<div className="max-w-screen-sm flex flex-col items-center">
+					<Link href="/" passHref>
+						<img
+							className="w-64 cursor-pointer object-contain mb-12"
+							src="/horzLogo.png"
+							alt="Sherri Cui logo"
+						/>
+					</Link>
+					<div className="grid gap-6 text">
+						<Item link="https://github.com/navandstokes">
+							Github
+						</Item>
+						<Item link="/cui_sherri.pdf">Resume</Item>
+						<Item link="/portraits">Photos</Item>
+						<Item link="https://thebox.sherrii.vercel.app/">
+							The Box
+						</Item>
+					</div>
 				</div>
 			</div>
 		</>
