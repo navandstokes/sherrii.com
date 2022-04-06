@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import api from 'api'
 import { Grid } from 'components/grid'
+import { Navbar } from 'components/navbar'
 
-const Main = ({ items }) => {
+const Main = ({ items, menu }) => {
 	return (
 		<>
 			<Head>
 				<title>SHERRI CUI - {items.fields.title}</title>
 			</Head>
+			<Navbar items={menu} />
 			<Grid items={items} />
 		</>
 	)
@@ -24,8 +26,15 @@ export async function getStaticProps({ params: { main }}) {
 		items = data.items[0]
 	})
 
+	const menu = await api.getEntries({
+	  content_type: `list`,
+	  order: 'fields.title'
+	}).then(data => {
+	  return data.items
+	})
+
 	return {
-		props: {items}
+		props: {items, menu}
 	}
 }
 

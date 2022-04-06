@@ -1,26 +1,38 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-export const Navbar = props => {
+export const Navbar = (props) => {
 	const Items = props.items.map((item, index) => {
-		const href = item.fields.slug == 'about' ? { pathname: '/about' } : { pathname: '/[main]', query: { main: item.fields.slug} }
+		const href =
+			item.fields.slug == "about"
+				? { pathname: "/about" }
+				: { pathname: "/[main]", query: { main: item.fields.slug } };
 		return (
-			<Link href={href}
-				as={'/' + item.fields.slug} 
-				key={item.fields.slug + index} >
-				<a className="pv3 f7 tracked ttu">{item.fields.title}</a>
+			<Link
+				href={href}
+				as={"/" + item.fields.slug}
+				key={item.fields.slug + index}
+			>
+				<a className="py-4 text-xs tracking-wider uppercase">
+					{item.fields.title}
+				</a>
 			</Link>
-		)
-	})
+		);
+	});
 	return (
-		<div className="flex flex-column-reverse flex-row-l justify-between-l">
-			<div className="flex flex-column flex-row justify-between ph3 ph5-l mw6-ns" style={{flexGrow: '1'}}>
+		<div className="flex flex-col-reverse items-center lg:flex-row lg:justify-between">
+			<div className="flex flex-row justify-between px-5 gap-8 md:min-w-md">
 				{Items}
 			</div>
-			<div className="dn db-l ph5 pv3 flex justify-center items-center w5-l">
+			<div className="block lg:px-5 py-4 flex justify-center items-center w-3/4 lg:w-36 shrink-0">
 				<Link href="/" passHref>
-					<img className="w-100 h-100 pointer" style={{objectFit: 'contain'}} src="/horzLogo.png" alt="Sherri Cui logo" />
-				</Link>				
+					<img
+						className="w-full h-full cursor-pointer"
+						style={{ objectFit: "contain" }}
+						src="/horzLogo.png"
+						alt="Sherri Cui logo"
+					/>
+				</Link>
 			</div>
 		</div>
-	)
-}
+	);
+};
