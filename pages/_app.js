@@ -28,10 +28,7 @@ function MyApp({ Component, pageProps, menu }) {
           content="initial-scale=1.0, width=device-width"
           key="viewport"
         />
-        <meta
-          name="description"
-          content="Photographer and retoucher from Toronto, Canada."
-        />
+        <meta name="description" content="Full stack developer." />
       </Head>
       <Component {...pageProps} />
     </>
