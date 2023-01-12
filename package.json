@@ -15,10 +15,10 @@
     "@babel/runtime": "^7.10.5",
     "contentful": "^9.1.18",
     "gsap": "^3.10.2",
-    "next": "^12.1.4",
+    "next": "^13.1.1",
     "nprogress": "^0.2.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-gsap": "^2.2.1",
     "react-intersection-observer": "^8.26.2",
     "react-scrollmagic": "^2.2.0"

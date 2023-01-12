@@ -44,8 +44,7 @@ function Main({ items, error }) {
 						<Item link="https://github.com/navandstokes">
 							Github
 						</Item>
-						<Item link="/cui_sherri.pdf">Resume</Item>
-						<Item link="/portraits">Photos</Item>
+						<Item link="/portraits">Camera</Item>
 						<Item link="https://thebox.sherrii.vercel.app/">
 							The Box
 						</Item>
@@ -58,10 +57,11 @@ function Main({ items, error }) {
 
 const Item = ({ link, children }) => {
 	return (
-		<Link href={link}>
-			<a className="text-7xl text-stone-900 font-extrabold uppercase transition-all text-center">
-				{children}
-			</a>
+		<Link
+			href={link}
+			className="text-7xl text-stone-900 font-extrabold uppercase transition-all text-center"
+		>
+			{children}
 		</Link>
 	);
 };
