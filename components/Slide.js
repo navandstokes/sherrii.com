@@ -54,7 +54,6 @@ export function Slide({ items }) {
 					start="top top"
 					end={`${totalWidth}px bottom`}
 					scrub={0.5}
-					markers
 					pin
 				>
 					<Tween
