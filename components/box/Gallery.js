@@ -4,13 +4,12 @@ import { useState, useCallback } from "react"
 import cn from "classnames"
 import { Img } from "components/Img"
 import { RemoveScroll } from "react-remove-scroll"
-import styles from "./Gallery.module.css"
 
 export const Gallery = ({ images, className }) => {
 	const [item, setItem] = useState(false)
 	const removeModal = useCallback(() => {
 		setItem(false)
-	}, [])
+	}, [setItem])
 
 	return (
 		<>
@@ -51,36 +50,34 @@ const GalleryImage = ({ setItem, index, title, file }) => {
 const GalleryModalWrapper = (props) => {
 	return (
 		<RemoveScroll>
-			<div className={styles.gridModalWrapper} id="galleryModal">
+			<div
+				className="overflow-y-scroll overflow-x-hidden fixed top-0 left-0 z-50 w-full h-screen lg:overflow-hidden lg:flex lg:justify-center lg:items-center"
+				id="galleryModal"
+			>
 				<button
-					className="hidden md:block absolute top-0 left-0 w-full h-full"
+					className="hidden md:block absolute top-0 left-0 w-full h-full bg-black/80"
 					onClick={props.removeModal}
 				/>
-				<div className={styles.gridModal}>
-					<div className="dn-l flex justify-between">
-						<a
+				<div className="bg-white flex flex-col md:flex-row w-full h-screen md:w-[935px] md:h-[600px]">
+					<div className="md:hidden flex justify-between px-2 py-1">
+						<button
 							className="mv2 mh3 flex items-center"
 							onClick={props.removeModal}
 						>
-							<div
-								style={{
-									width: "8px",
-									marginRight: "10px",
-									display: "block",
-								}}
+							<svg
+								className="w-2 mr-2"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 477.175 477.175"
 							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 477.175 477.175"
-								>
-									<path
-										fill="currentColor"
-										d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"
-									/>
-								</svg>
-							</div>
-							<h4 className="ma0 f7 fw5 ttu">Go Back</h4>
-						</a>
+								<path
+									fill="currentColor"
+									d="M145.188 238.575l215.5-215.5c5.3-5.3 5.3-13.8 0-19.1s-13.8-5.3-19.1 0l-225.1 225.1c-5.3 5.3-5.3 13.8 0 19.1l225.1 225c2.6 2.6 6.1 4 9.5 4s6.9-1.3 9.5-4c5.3-5.3 5.3-13.8 0-19.1l-215.4-215.5z"
+								/>
+							</svg>
+							<h4 className="uppercase text-xs font-bold tracking-wider">
+								Go Back
+							</h4>
+						</button>
 					</div>
 					<GalleryInner {...props} />
 				</div>
@@ -92,27 +89,15 @@ const GalleryModalWrapper = (props) => {
 const GalleryInner = (props) => {
 	return (
 		<>
-			<div className={styles.modalImage}>
-				<div
-					className="absolute top-0 left-0 w-100"
-					style={{ cursor: "auto" }}
-				>
-					<Img file={props.file} alt={props.description} ratio={1} />
-				</div>
+			<div className="relative w-full md:w-[600px] md:h-[600px]">
+				<Img src={props.file?.url} alt={props.description} ratio={1} />
 			</div>
-			<div
-				className={
-					styles.modalDetails +
-					" bg-magnolia pa3 pt2 pa4-l pb2-l flex-l flex-column justify-between"
-				}
-			>
-				<a
-					className="dn db-l absolute pointer w2 h2 white"
-					style={{ top: "-1.5rem", right: 0 }}
+			<div className="relative bg-white p-10 md:w-[335px] md:h-[600px]">
+				<button
+					className="hidden lg:block absolute -top-6 right-0 h-4 w-4 text-white"
 					onClick={props.removeModal}
 				>
 					<svg
-						style={{ position: "absolute", left: 0, top: 0 }}
 						stroke="currentColor"
 						fill="none"
 						strokeWidth="2"
@@ -126,11 +111,9 @@ const GalleryInner = (props) => {
 						<line x1="18" y1="6" x2="6" y2="18" />
 						<line x1="6" y1="6" x2="18" y2="18" />
 					</svg>
-				</a>
-				<div className="flex flex-row flex-column-l flex-wrap justify-between">
-					<h3 className="fw5">{props.title}</h3>
-					<p>{props.description}</p>
-				</div>
+				</button>
+				<h3 className="font-bold text-xl mb-4">{props.title}</h3>
+				<p className="text-lg">{props.description}</p>
 			</div>
 		</>
 	)
