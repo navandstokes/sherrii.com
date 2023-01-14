@@ -1,6 +1,6 @@
 import api from "api"
-import { Grid } from "~/components/Grid"
-import { Slide } from "~/components/Slide"
+import { Grid } from "components/Grid"
+import { Slide } from "components/Slide"
 
 export async function generateStaticParams() {
 	const items = await api
