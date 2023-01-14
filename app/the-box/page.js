@@ -30,7 +30,7 @@ export default async function Home() {
 							<Section
 								{...item.fields}
 								key={item.sys.id}
-								className={index == 0 ? "mb-12" : "my-6"}
+								className={index == 0 ? "mb-12" : "my-12"}
 							/>
 						)
 					})}

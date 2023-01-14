@@ -8,7 +8,7 @@ export const Block = ({ images, slug, title, subtitle, text }) => {
 	return (
 		<div
 			className={cn("pb-6", {
-				"bg-stone-100 rounded-xl px-6 py-5 basis-1/4 grow inline-block my-4":
+				"bg-stone-100 rounded-xl px-6 py-5 md:basis-1/4 grow inline-block md:my-4":
 					!hasImages,
 				"md:grid md:grid-cols-5 md:items-start gap-6 lg:gap-10 w-full":
 					hasImages,
@@ -29,7 +29,7 @@ export const Block = ({ images, slug, title, subtitle, text }) => {
 			{images?.length > 0 && (
 				<Gallery
 					images={images}
-					className="md:pt-16 md:pl-20 col-span-3"
+					className="pt-6 md:pt-16 md:pl-20 col-span-3"
 				/>
 			)}
 		</div>
