@@ -137,7 +137,7 @@ export const Picture = (props) => {
 			<img
 				alt={props.alt}
 				className={props.className ? props.className : ""}
-				style={props.style ? props.style : ""}
+				style={props.style ? props.style : {}}
 			/>
 			<noscript>
 				<img src={props.src} alt={props.alt} />

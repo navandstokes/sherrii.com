@@ -12,9 +12,7 @@ export default function Main() {
 				<div className={"grid gap-6 " + styles.text}>
 					<Item link="https://github.com/navandstokes">Github</Item>
 					<Item link="/c/portraits">Camera</Item>
-					<Item link="https://thebox.sherrii.vercel.app/">
-						The Box
-					</Item>
+					<Item link="/the-box">The Box</Item>
 					<Item link="https://coscove.com/">Coscove</Item>
 				</div>
 			</div>

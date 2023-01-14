@@ -1,0 +1,71 @@
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gridItem {
+	margin-right: 0.25rem;
+	margin-bottom: 0.25rem;
+	width: calc(33.33% - 0.1875rem);
+}
+
+.gridItem:nth-child(3n) {
+	margin-right: 0px !important;
+}
+
+.gridModalWrapper {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100vh;
+}
+
+.gridModal {
+	background: white;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.modalImage {
+	position: relative;
+	cursor: move;
+	cursor: grab;
+	user-select: none;
+	width: 100vw;
+	height: 100vw;
+}
+
+@media (min-width: 60em) {
+	.gridModalWrapper {
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.gridModal {
+		flex-direction: row;
+		width: 935px;
+		height: 600px;
+		min-height: 600px;
+	}
+
+	.modalImage {
+		width: 600px;
+		height: 600px;
+		overflow: hidden;
+	}
+
+	.modalDetails {
+		width: 335px;
+		height: 600px;
+	}
+}

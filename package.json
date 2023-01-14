@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.10.5",
+    "@contentful/rich-text-react-renderer": "^15.16.2",
+    "classnames": "^2.3.2",
     "contentful": "^9.1.18",
     "gsap": "^3.11.4",
     "next": "^13.1.1",
@@ -20,7 +22,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-gsap": "^3.2.1",
-    "react-intersection-observer": "^8.26.2"
+    "react-intersection-observer": "^8.26.2",
+    "react-remove-scroll": "^2.5.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
