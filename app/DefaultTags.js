@@ -11,6 +11,7 @@ export default function DefaultTags() {
                 content="Full stack developer building with Next.js and PostgreSQL."
             />
             <link rel="icon" href="/icon.svg" />
+            <link rel="mask-icon" href="/logo.svg" color="#cccccc" />
         </>
     )
 }
