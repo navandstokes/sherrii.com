@@ -74,12 +74,14 @@ export const Img = (props) => {
 					sizes={props.sizes ? props.sizes : "100vw"}
 				/>
 				{inView && (
+					//eslint-disable-next-line
 					<img
 						alt={props.alt}
 						className={props.className ? props.className : ""}
 					/>
 				)}
 				<noscript>
+					{/*eslint-disable-next-line*/}
 					<img src={props.src} alt={props.alt} />
 				</noscript>
 			</picture>
@@ -134,12 +136,14 @@ export const Picture = (props) => {
 					${props.src}?w=2000&fm=jpg 2000w
 				`}
 			/>
+			{/*eslint-disable-next-line*/}
 			<img
 				alt={props.alt}
 				className={props.className ? props.className : ""}
 				style={props.style ? props.style : {}}
 			/>
 			<noscript>
+				{/*eslint-disable-next-line*/}
 				<img src={props.src} alt={props.alt} />
 			</noscript>
 		</picture>

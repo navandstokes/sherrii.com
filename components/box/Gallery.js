@@ -38,7 +38,7 @@ export const Gallery = ({ images, className }) => {
 const GalleryImage = ({ setItem, index, title, file }) => {
 	const handleClick = useCallback(() => {
 		setItem(index + 1)
-	}, [index])
+	}, [index, setItem])
 
 	return (
 		<button className="w-full" onClick={handleClick}>
