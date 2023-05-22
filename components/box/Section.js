@@ -1,4 +1,3 @@
-import cn from "classnames"
 import { Block } from "components/box/Block"
 import { Renderer } from "components/box/Renderer"
 
@@ -18,7 +17,7 @@ export const Section = ({ title, subtitle, slug, text, items, className }) => {
 			</div>
 			{items?.length > 0 && (
 				<div className="flex flex-wrap gap-6">
-					{items.map((item, index) => (
+					{items.map((item) => (
 						<Block {...item.fields} key={item.sys.id} />
 					))}
 				</div>

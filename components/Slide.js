@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Img } from "components/Img"
-import { Tween, Timeline, ScrollTrigger } from "react-gsap"
+import { Tween, ScrollTrigger } from "react-gsap"
 
 export function Slide({ items }) {
 	const [width, setWidth] = useState({
@@ -12,7 +12,7 @@ export function Slide({ items }) {
 	})
 
 	useEffect(() => {
-		setWidth((prev) => ({
+		setWidth(() => ({
 			elWidth: document.getElementById("horizontalViewer").offsetWidth,
 			winWidth: window.innerWidth,
 			winHeight: window.innerHeight,
@@ -44,8 +44,6 @@ export function Slide({ items }) {
 			</div>
 		)
 	})
-
-	const duration = (totalWidth / width.winHeight) * 100
 
 	return (
 		<>

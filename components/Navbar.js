@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Logo } from "components/Logo"
 
 export const Navbar = (props) => {
-	const Items = props.items.map((item, index) => {
+	const Items = props.items.map((item) => {
 		return (
 			<Link
 				href={`/c/${item.fields.slug}`}

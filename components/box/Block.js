@@ -1,5 +1,4 @@
 import cn from "classnames"
-import Link from "next/link"
 import { Renderer } from "components/box/Renderer"
 import { Gallery } from "components/box/Gallery"
 
